@@ -123,10 +123,10 @@ c
 Use any combination of `-1`, `-2`, or `-3` to show columns:
 
 ```
-$ commr -13 tests/inputs/file1.txt tests/inputs/file2.txt
+$ commr -d "|" -13 tests/inputs/file1.txt tests/inputs/file2.txt
 a
 b
-	c
+|c
 d
 ```
 
