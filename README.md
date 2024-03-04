@@ -97,6 +97,39 @@ a
 d
 ```
 
+Use `-1` to see just the first column:
+
+```
+$ commr -1 tests/inputs/file1.txt tests/inputs/file2.txt
+a
+b
+d
+```
+
+Use `-2` to see just the first column:
+
+```
+$ commr -2 tests/inputs/file1.txt tests/inputs/file2.txt
+B
+```
+
+Use `-3` to see just the first column:
+
+```
+$ commr -3 tests/inputs/file1.txt tests/inputs/file2.txt
+c
+```
+
+Use any combination of `-1`, `-2`, or `-3` to show columns:
+
+```
+$ commr -13 tests/inputs/file1.txt tests/inputs/file2.txt
+a
+b
+	c
+d
+```
+
 ## Rationale
 
 The BSD/GNU versions of `comm` use the `-1`, `-2`, and `-3` flags to _suppress_ the printing of the columns.
